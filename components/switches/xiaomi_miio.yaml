@@ -1,0 +1,26 @@
+# #开关
+# switch:
+#   - platform: template
+#     switches:
+#       player:
+#         friendly_name: '播放'
+#         value_template: "{{ states('switch.player') }}"
+#         turn_on:
+#           - service: tts.baidu_say
+#             data:
+#               message: 已打开
+#           - condition: state
+#             entity_id: switch.player
+#             state: 'on'
+#         turn_off:
+#           - service: tts.baidu_say
+#             data:
+#               message: 已关闭
+#           - condition: state
+#             entity_id: switch.player
+#             state: 'off'
+
+platform: xiaomi_miio
+name: 小米插座
+host: !secret xiaomi_socket_host
+token: !secret xiaomi_socket_token

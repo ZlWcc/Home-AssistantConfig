@@ -1,0 +1,5 @@
+name: Home
+latitude: !secret ty_latitude
+longitude: !secret ty_longitude
+radius: 100
+icon: mdi:home-heart

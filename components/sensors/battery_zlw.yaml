@@ -1,0 +1,30 @@
+
+platform: template
+sensors:
+  battery_zlw:
+    friendly_name: 张力文-电池
+    unit_of_measurement: '%'
+    value_template: '{{ states.device_tracker.zlw.attributes.battery}}'
+    icon_template: >-
+      {% set battery = states.device_tracker.zlw.attributes.battery %}
+      {% if battery < 10 %}
+        mdi:battery-10
+      {% elif battery < 20 %}
+        mdi:battery-20
+      {% elif battery < 30 %}
+        mdi:battery-30
+      {% elif battery < 40 %}
+        mdi:battery-40
+      {% elif battery < 50 %}
+        mdi:battery-50
+      {% elif battery < 60 %}
+        mdi:battery-60
+      {% elif battery < 70 %}
+        mdi:battery-70
+      {% elif battery < 80 %}
+        mdi:battery-80
+      {% elif battery < 90 %}
+        mdi:battery-90
+      {% else %}
+        mdi:battery
+      {% endif %}

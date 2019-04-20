@@ -1,0 +1,5 @@
+name: cs_home
+latitude: !secret cs_latitude
+longitude: !secret cs_longitude
+radius: 100
+icon: mdi:home-city

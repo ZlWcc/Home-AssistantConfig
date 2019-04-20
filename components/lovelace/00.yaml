@@ -1,0 +1,82 @@
+path: home
+icon: mdi:castle
+background: center / cover no-repeat url("/local/lovelace/background-15.gif") fixed
+name: Home
+cards:
+  - id: 1001
+    type: horizontal-stack
+    cards:
+      - type: picture-elements
+        image: /local/lovelace/home/zlw_1.jpg
+        elements:
+          - type: state-label
+            entity: device_tracker.zlw
+            prefix: '张力文 -- '
+            style: {color: white, left: 30%, top: 90%}
+          - type: state-icon
+            entity: sensor.battery_zlw
+            tap_action: more_info
+            style: {color: white, left: 73%, top: 90%}
+          - type: state-label
+            entity: sensor.battery_zlw
+            style: {color: white, left: 87%, top: 91%}
+      - type: picture-elements
+        image: /local/lovelace/home/lj_1.jpg
+        elements:
+          - type: state-label
+            entity: device_tracker.0r
+            prefix: '李娇 -- '
+            style: {color: white, left: 30%, top: 90%}
+          - type: state-icon
+            entity: sensor.0r_battery_state
+            tap_action: more_info
+            style: {color: white, left: 65%, top: 90%}
+          - type: state-icon
+            entity: sensor.0r_battery_level
+            tap_action: more_info
+            style: {color: white, left: 73%, top: 90%}
+          - type: state-label
+            entity: sensor.0r_battery_level
+            style: {color: white, left: 87%, top: 91%}
+  
+  - id: 1002
+    type: shopping-list
+    title: 待办事项
+
+  - id: 1003
+    type: entities
+    title: Switches
+    entities:
+      - entity: switch.xiao_mi_cha_zuo
+        secondary_info: last-changed
+      - entity: sensor.xiaomi_socket_temp
+
+  - id: 1004
+    type: vertical-stack
+    cards:
+
+      - type: horizontal-stack
+        cards:
+          - type: gauge
+            name: CPU 使用率
+            unit: '%'
+            entity:  sensor.processor_use
+            severity:
+              green: 0
+              yellow: 45
+              red: 85 
+          - type: gauge
+            name: 内存使用率
+            unit: '%'
+            entity:  sensor.memory_use_percent
+            severity:
+              green: 0
+              yellow: 45
+              red: 85 
+      - type: entities
+        entities: 
+          - sensor.last_boot
+  - id: 1005
+    type: iframe
+    aspect_ratio: 90%
+    url: 'https://embed.windy.com/embed2.html?rain,28.487,112.023,5'   

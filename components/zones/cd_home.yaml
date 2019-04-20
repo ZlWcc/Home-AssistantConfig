@@ -1,0 +1,5 @@
+name: cd_home
+latitude: !secret cd_latitude
+longitude: !secret cd_longitude
+radius: 100
+icon: mdi:home-variant

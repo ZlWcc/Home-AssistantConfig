@@ -1,0 +1,25 @@
+host: !secret android_ip_webcam_ip
+name: Hall
+port: !secret android_ip_webcam_port
+# switches:
+#   - exposure_lock
+#   - ffc
+#   - focus
+#   - gps_active
+#   - night_vision
+#   - overlay
+#   - torch
+#   - whitebalance_lock
+#   - video_recording
+# motion_sensor: TRUE
+# sensors:
+#       - audio_connections
+#       - battery_level
+#       - battery_temp
+#       - battery_voltage
+#       - light
+#       - motion
+#       - pressure
+#       - proximity
+#       - sound
+#       - video_connections

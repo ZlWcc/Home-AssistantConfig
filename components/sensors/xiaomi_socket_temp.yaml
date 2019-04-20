@@ -1,0 +1,6 @@
+platform: template
+sensors:
+  xiaomi_socket_temp:
+    friendly_name: 小米插座-温度
+    value_template: '{{ states.switch.xiao_mi_cha_zuo.attributes.temperature}}'
+    icon_template: mdi:temperature-centigrade

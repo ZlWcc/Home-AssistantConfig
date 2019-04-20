@@ -1,0 +1,19 @@
+title: Surveillance
+icon: mdi:cctv
+background: center / cover no-repeat url("/local/lovelace/background-15.gif") fixed
+panel: true
+cards:
+  # - id: f7445f719d25463788d385ee2ad55d93  # Automatically created id
+  #   type: vertical-stack
+  #   cards:
+  #     - type: picture-entity
+  #       entity: camera.ip_webcam
+  # - id: 2001  # Automatically created id
+  #   type: vertical-stack
+  #   cards:
+  #     - type: picture-entity
+  #       entity: camera.raspberry_pi_camera
+  - id: 2006
+    type: iframe
+    aspect_ratio: 75%
+    url: 'http://192.168.1.105:8080/?action=stream' 

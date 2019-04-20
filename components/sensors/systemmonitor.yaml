@@ -1,0 +1,10 @@
+
+platform: systemmonitor
+resources:
+  - type: memory_use_percent
+  # - type: disk_use_percent
+  #   arg: c:\
+  # - type: swap_use_percent
+  - type: processor_use
+  - type: last_boot      
+  # - type: memory_free
