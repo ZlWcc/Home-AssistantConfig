@@ -6,11 +6,15 @@
 !*.yaml
 !.gitignore
 !*.md
+!/www/lovelace
+!/components
 
 # Ignore folders.
 .storage
 .cloud
 .google.token
+home-assistant.log
+home-assistant_v2.db
 
 # Ensure these YAML files are ignored, otherwise your secret data/credentials will leak.
 ip_bans.yaml
