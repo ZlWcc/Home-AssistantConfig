@@ -6,8 +6,8 @@
 !*.yaml
 !.gitignore
 !*.md
-!/www/lovelace
-!/components
+!www/lovelace
+!components
 
 # Ignore folders.
 .storage
