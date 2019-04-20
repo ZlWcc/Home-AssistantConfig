@@ -16,4 +16,4 @@ cards:
   - id: 2006
     type: iframe
     aspect_ratio: 75%
-    url: 'http://192.168.1.105:8080/?action=stream' 
+    url: !secret mjpg_stream_url
