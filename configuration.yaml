@@ -1,0 +1,14 @@
+homeassistant:
+  name: !secret name
+  temperature_unit: C
+  latitude: !secret latitude
+  longitude: !secret longitude
+  elevation: 52
+  unit_system: metric
+  time_zone: !secret timezone
+  packages: !include_dir_named components/packages
+  # whitelist_external_dirs:
+  #   - /config
+# media_player:
+#   - platform: squeezebox
+#     host: 127.0.0.1

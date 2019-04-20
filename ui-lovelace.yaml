@@ -1,0 +1,4 @@
+name: 
+views:
+  - !include components/lovelace/00.yaml  
+  - !include components/lovelace/01.yaml  
